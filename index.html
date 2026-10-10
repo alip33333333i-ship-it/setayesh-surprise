@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f5e9ff">
+<title>برای ستایش جونم 🎀❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  color: #654b72;
+  background: linear-gradient(135deg, #f8e8ff, #e2f2ff, #ffe8f1);
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.floaties {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.float {
+  position: absolute;
+  bottom: -60px;
+  animation: floatUp linear infinite;
+  opacity: .75;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  15% { opacity: .8; }
+  85% { opacity: .8; }
+  100% { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: min(92%, 620px);
+  margin: 0 auto;
+  padding: 32px 0 55px;
+}
+
+.card {
+  background: rgba(255,255,255,.83);
+  border: 1px solid rgba(255,255,255,.95);
+  border-radius: 28px;
+  padding: 25px 21px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 35px rgba(143, 102, 164, .13);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.bunny {
+  font-size: 57px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: clamp(25px, 7vw, 36px);
+  line-height: 1.8;
+  color: #b45c9d;
+  margin: 5px 0 12px;
+}
+
+h2 {
+  color: #b45c9d;
+  line-height: 1.9;
+  font-size: 23px;
+}
+
+p {
+  line-height: 2.25;
+}
+
+.subtitle {
+  color: #8c7198;
+  font-size: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 18px;
+  padding: 13px 23px;
+  margin-top: 13px;
+  background: linear-gradient(135deg, #d8b7ff, #ffbedb);
+  color: #68476f;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px #d9b5e866;
+  transition: transform .2s;
+}
+
+.btn:active {
+  transform: scale(.96);
+}
+
+.envelope {
+  font-size: 95px;
+  margin: 16px 0 5px;
+  animation: wiggle 2.5s infinite ease-in-out;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-6px); }
+}
+
+.letter {
+  text-align: right;
+  font-size: 15px;
+  line-height: 2.3;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.letter p {
+  margin: 0 0 18px;
+}
+
+.letter .letter-title {
+  text-align: center;
+  color: #b45c9d;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.signature {
+  text-align: center;
+  color: #c45d9b;
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.heart-area {
+  padding: 24px 0;
+}
+
+.tap-heart {
+  border: none;
+  background: transparent;
+  font-size: 105px;
+  filter: drop-shadow(0 9px 12px #f5a6bc88);
+  animation: heartbeat 1.15s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.12); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.09); }
+}
+
+.burst-heart {
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+  font-size: 24px;
+  animation: burst 1.25s ease-out forwards;
+}
+
+@keyframes burst {
+  0% {
+    transform: translate(0, 0) scale(.4) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1.5) rotate(300deg);
+    opacity: 0;
+  }
+}
+
+.final-message {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 2.2;
+  color: #b64d86;
+  overflow-wrap: anywhere;
+}
+
+.big-heart {
+  font-size: 80px;
+  animation: heartbeat 1.15s infinite;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  opacity: .8;
+  padding: 12px;
+}
+
+.sparkle {
+  display: inline-block;
+  animation: twinkle 1.8s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { transform: scale(.85) rotate(-8deg); }
+  to { transform: scale(1.15) rotate(8deg); }
+}
+
+@media (max-width: 420px) {
+  main { width: 93%; padding-top: 20px; }
+  .card { padding: 21px 16px; border-radius: 24px; }
+  .letter { font-size: 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="floaties" id="floaties"></div>
+
+<main>
+
+  <section class="card" id="welcome">
+    <div class="bunny">🐶🫏</div>
+    <h1>برای ستایش جونممم 🎀❤️</h1>
+    <p class="subtitle">
+      یه سورپرایز کوچولو برای خانوم دیوونه‌ی خودمون! 😂🦋
+    </p>
+
+    <div class="envelope">💌</div>
+
+    <p>
+      ستایــــشــــشــــش! 😂❤️<br>
+      این نامه مخصوص خودته؛ پس با دقت بخونش خانوم! 🐶
+    </p>
+
+    <button class="btn" onclick="openLetter()">
+      باز کردن نامه 💌
+    </button>
+  </section>
+
+  <section class="card hidden" id="letterCard">
+    <div class="sparkle">🎀 🦋 💗 🐶 🫏</div>
+    <h2>💌 برای ستایش، همون دیوونه‌ی خودمون 😂❤️</h2>
+
+    <div class="letter">
+
+      <p class="letter-title">ستایــــشــــشــــش! 😂❤️</p>
+
+      <p>سلام به خانومممم! 🫵🏻😂🐶🫏</p>
+
+      <p>اول از همه روز دختر مبارککککک! 🎀🩷🦋</p>
+
+      <p>خب خانوم، امروز قراره یه نامه از من بخونی؛ پس لطفاً قبلش یه گوشه بشین، تمرکزتو جمع کن و سعی کن تا آخرش بدون اینکه وسطش بیای بگی «چیههههه؟! 😂» ادامه بدی.</p>
+
+      <p>البته با شناختی که ازت دارم، احتمال اینکه تا آخر نامه سه بار بهم فحش داده باشی و دوبار هم خندیده باشی، خیلی بیشتره! 😭😂</p>
+
+      <p>آخه واقعاً نمی‌دونم تو چطوری تونستی این‌قدر راحت با این اخلاق عجیب‌وغریبت زندگی کنی! 🤣🐶</p>
+
+      <p>بعضی وقتا آدم نگاهت می‌کنه، می‌گه چه دختر آروم و خوبی؛ دو دقیقه بعد یه کاری می‌کنی که آدم تمام تصوراتش درباره‌ی انسانیت رو می‌ذاره کنار! 😂😭</p>
+
+      <p>ولی خب، ستایشه دیگه؛ از این بیشتر هم انتظار نمی‌ره! 🤣❤️</p>
+
+      <p>حالا شوخی به کنار، می‌خوام یه چیزی بهت بگم.</p>
+
+      <p>می‌دونی قشنگ‌ترین قسمت بعضی آدما چیه؟ اینکه لازم نیست برای خوش گذروندن باهاشون برنامه‌ی خاصی داشته باشی. گاهی یه حرف معمولی، یه شوخی مسخره یا یه گفت‌وگوی ساده کافیه تا یه روز عادی تبدیل بشه به یه خاطره که بعداً با یادآوریش دوباره بخندی.</p>
+
+      <p>من این چیزای کوچیک رو دوست دارم؛ همین لحظه‌هایی که شاید همون موقع خیلی معمولی به نظر بیان، ولی بعداً می‌فهمی چقدر قشنگ بودن. ❤️</p>
+
+      <p>اصلاً بعضی آدما بدون اینکه خودشون متوجه باشن، یه جوری توی روزهای آدم جا می‌گیرن که بودنشون دیگه فقط یه اتفاق معمولی نیست. یه جایی بین خنده‌ها، حرف‌ها و خاطره‌هاشون، یه حس خوب از خودشون باقی می‌ذارن.</p>
+
+      <p>و به نظرم زندگی بدون این آدما یه چیزی کم داره. 🫂💗</p>
+
+      <p>راستی ستایش، یه اعتراف کوچولو هم بکنم! 😂</p>
+
+      <p>گاهی واقعاً نمی‌فهمم باید باهات جدی حرف بزنم یا بخندم! یعنی هنوز جمله‌مو تموم نکردم، خودت یه چیزی می‌گی که کلاً رشته‌ی افکارم پاره می‌شه! 😭🤣</p>
+
+      <p>ولی خب، همین دیوونه‌بازی‌هاست که بعضی لحظه‌ها رو قشنگ می‌کنه.</p>
+
+      <p>فقط یه خواهشی ازت دارم؛ اگه یه روز تصمیم گرفتی آدم عاقل و متینی بشی، لطفاً از قبل خبر بده که ما هم خودمونو آماده کنیم! چون این تغییر ناگهانی ممکنه برای اطرافیانت عوارض جبران‌ناپذیر داشته باشه! 😂🐶🫏</p>
+
+      <p>حالاااا، از شوخی که بگذریم...</p>
+
+      <p>یه چیزی هست که دوست دارم همیشه یادت بمونه.</p>
+
+      <p>زندگی همیشه اون‌جوری که ما می‌خوایم پیش نمی‌ره. بعضی روزا همه‌چی خوبه و آدم دلش می‌خواد زمان همون‌جا وایسه؛ بعضی روزا هم یه‌سری اتفاق می‌افتن که حتی حوصله‌ی توضیح دادنشون رو هم نداریم.</p>
+
+      <p>گاهی یه چیزی ناراحتمون می‌کنه که شاید از بیرون خیلی کوچیک به نظر بیاد، ولی برای خودمون سنگینه. گاهی هم کلی حرف توی دلمونه و نمی‌دونیم چطوری باید درباره‌شون حرف بزنیم.</p>
+
+      <p>اما به نظرم یکی از قشنگ‌ترین چیزهای دنیا اینه که آدم مجبور نباشه همیشه وانمود کنه حالش خوبه.</p>
+
+      <p>اینکه بتونه یه روز بخنده، یه روز ناراحت باشه، یه روز کلی حرف بزنه و یه روز هم فقط دلش بخواد سکوت کنه.</p>
+
+      <p>ما قرار نیست همیشه قوی باشیم، همیشه جواب همه‌چی رو بدونیم یا برای هر مشکلی یه راه‌حل پیدا کنیم.</p>
+
+      <p>گاهی فقط باید به خودمون فرصت بدیم. ❤️</p>
+
+      <p>و من امیدوارم تو هم همیشه این فرصت رو به خودت بدی؛ به خودت سخت نگیری و یادت باشه که لازم نیست همه‌چی رو تنهایی و یک‌دفعه درست کنی.</p>
+
+      <p>امیدوارم هر وقت به چیزی فکر می‌کنی که ناراحتت کرده، یه روز برسه که بهش نگاه کنی و ببینی دیگه مثل قبل سنگین نیست.</p>
+
+      <p>امیدوارم چیزایی که الان آرزوشون رو داری، کم‌کم به واقعیت تبدیل بشن. امیدوارم اتفاقایی برات بیفتن که از خوشحالی ندونی باید به کی خبر بدی و از کجا شروع کنی! 🥹❤️</p>
+
+      <p>امیدوارم کلی بخندی، کلی تجربه‌ی قشنگ داشته باشی، آدمای خوبی سر راهت قرار بگیرن و روزهایی داشته باشی که شب، قبل از خواب، با خودت بگی: «امروز واقعاً روز خوبی بود.»</p>
+
+      <p>و از همه مهم‌تر، امیدوارم هیچ‌وقت به خاطر سختی‌های مسیر، خودت و توانایی‌هات رو دست‌کم نگیری.</p>
+
+      <p>شاید همیشه همه‌چی آسون نباشه، ولی این به معنی ناتوان بودن تو نیست. گاهی فقط لازمه یه کم استراحت کنی، نفسی تازه کنی و دوباره ادامه بدی.</p>
+
+      <p>راستی، یه چیزی رو هم درباره‌ی خودت بگم؟ ❤️</p>
+
+      <p>من فکر می‌کنم آدمایی که می‌تونن هم با بقیه بخندن و هم وقتی لازم شد درباره‌ی چیزای جدی حرف بزنن، یه قشنگی خاصی دارن.</p>
+
+      <p>اینکه رابطه فقط به خندیدن و شوخی کردن محدود نباشه؛ اینکه پشت همه‌ی اون خنده‌ها، یه حس واقعی هم وجود داشته باشه.</p>
+
+      <p>و شاید قشنگ‌ترین قسمت همین باشه که لازم نیست برای نشون دادن این حس، هر روز یه عالمه جمله‌ی عجیب‌وغریب بگیم.</p>
+
+      <p>گاهی همین که یه نفر می‌دونه می‌تونه حرف بزنه و حرفش شنیده می‌شه، خودش کلی ارزش داره.</p>
+
+      <p>من همیشه نمی‌دونم بهترین جواب چیه یا چطور می‌شه همه‌چی رو درست کرد؛ ولی وقتی حرفی زده می‌شه، برام مهمه که با دقت بشنومش. بعضی حرف‌ها شاید راه‌حل نداشته باشن، اما همچنان ارزش شنیده شدن دارن. 🫂❤️</p>
+
+      <p>و خب، خانوم ستایش، این قسمت نامه رو زیادی جدی نگیر که یه‌وقت فکر نکنی من از فردا قراره تبدیل به یه فیلسوف بشم! 😂😭</p>
+
+      <p>هنوز همون آدم قبلیم و تو هم هنوز همون ستایش خودمونی‌ای که احتمالاً بعد از خوندن این نامه می‌گه: «تموم شد یا بازم می‌خوای حرف بزنی؟!» 🤣🐶🫏</p>
+
+      <p>ولی واقعاً، جدا از همه‌ی شوخی‌ها، امیدوارم همیشه حالت خوب باشه.</p>
+
+      <p>امیدوارم دلت آروم باشه، خنده‌هات واقعی باشن و آدمایی اطرافت باشن که بودنشون بهت حس خوبی بده.</p>
+
+      <p>امیدوارم هیچ‌وقت برای دوست‌داشتنی بودن مجبور نباشی خودت رو تغییر بدی؛ همون‌جوری که هستی، با همه‌ی اخلاق‌های خوبت، شیطنت‌هات و حتی اون اخلاق‌هایی که بعضی وقتا آدمو به مرز جنون می‌رسونن! 😂❤️</p>
+
+      <p>و امیدوارم وقتی سال‌ها بعد به این روزها فکر می‌کنی، کلی خاطره‌ی قشنگ برای یادآوری داشته باشی؛ خاطره‌هایی که باعث بشن لبخند بزنی و با خودت بگی: «چه روزایی داشتیم!» 🩷🦋</p>
+
+      <p>خببببب، فکر کنم دیگه به اندازه‌ی کافی حرف زدم! 😂</p>
+
+      <p>ولی قبل از اینکه نامه رو تموم کنم، می‌خوام بدونی که برای من قشنگه وقتی می‌بینم آدمای اطرافم خوشحالن، به آرزوهاشون می‌رسن و روزهای خوبی رو تجربه می‌کنن.</p>
+
+      <p>تو هم یکی از همون آدمایی هستی که از ته دلم می‌خوام بهترین اتفاق‌ها براش بیفته.</p>
+
+      <p>نه فقط امروز که روز دختره؛ بلکه توی روزهای معمولی، توی روزهایی که هیچ مناسبت خاصی ندارن و حتی توی روزهایی که شاید خودت حوصله‌ی هیچ‌چیزی رو نداشته باشی.</p>
+
+      <p>امیدوارم زندگی برات پر از لحظه‌هایی باشه که ارزش خندیدن، ذوق کردن و به خاطر سپردن داشته باشن. ❤️🫂</p>
+
+      <p><strong>روز دختر مبارک، ستایش جونم!</strong> 🎀💗🦋</p>
+
+      <p>حالا برو به زندگیت برس، ولی یادت نره که با وجود تمام این حرف‌های قشنگ، هنوز همون سگ و خرِ سابقی و این نامه هیچ تغییری توی پرونده‌ی شخصیتت ایجاد نمی‌کنه! 🤣🐶🫏</p>
+
+      <p>فقط یه قلب قرمز آخر نامه گذاشتم؛ بزن روش ببینم چه خبره! 😂❤️</p>
+
+      <p class="signature">فدات شم، آبجی! 🫂❤️</p>
+
+    </div>
+
+    <button class="btn" onclick="showHeart()">
+      خب، حالا بزن بریم! 😂❤️
+    </button>
+  </section>
+
+  <section class="card hidden" id="heartCard">
+    <h2>یه چیز کوچولو مونده، ستایش! 👀❤️</h2>
+
+    <p>
+      روی قلب قرمزه بزن تا سورپرایز آخر رو ببینی! 😂🦋
+    </p>
+
+    <div class="heart-area">
+      <button class="tap-heart" id="redHeart" onclick="burstHeart()" aria-label="قلب قرمز">
+        ❤️
+      </button>
+    </div>
+
+    <p class="subtitle">بزن روش دیگه خانومممم! 😂🐶</p>
+  </section>
+
+  <section class="card hidden" id="finalCard">
+    <div class="big-heart">❤️</div>
+
+    <h2>ستایــــشــــشــــش! 😂❤️</h2>
+
+    <div class="final-message">
+      ستایش، خر، سگ! 😂🐶🫏<br><br>
+      فکر کردی که من تورو فراموش کردم و فقط برا اسما درست میکنم؟ 😂😭<br><br>
+      نه آبجی جونمممممممم! 🫂❤️🎀
+    </div>
+
+    <p>
+      🐶 🫏 🦋 ❤️ 🎀 💕
+    </p>
+
+    <p class="signature">فدات شم، آبجی دیوونه! 😂❤️</p>
+  </section>
+
+  <div class="footer">
+    ساخته‌شده با کلی شوخی و یه ذره احساس 😂❤️🦋
+  </div>
+
+</main>
+
+<script>
+const floaties = document.getElementById('floaties');
+
+const emojis = [
+  '🐶', '🫏', '🦋', '❤️', '💕', '🎀',
+  '💗', '✨', '🐾', '🌸'
+];
+
+for (let i = 0; i < 24; i++) {
+  const item = document.createElement('span');
+  item.className = 'float';
+  item.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+  item.style.left = Math.random() * 100 + '%';
+  item.style.animationDuration = (9 + Math.random() * 13) + 's';
+  item.style.animationDelay = (-Math.random() * 18) + 's';
+  item.style.fontSize = (17 + Math.random() * 17) + 'px';
+  floaties.appendChild(item);
+}
+
+function openLetter() {
+  document.getElementById('welcome').classList.add('hidden');
+  document.getElementById('letterCard').classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showHeart() {
+  document.getElementById('letterCard').classList.add('hidden');
+  document.getElementById('heartCard').classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function burstHeart() {
+  const heart = document.getElementById('redHeart');
+
+  if (heart.dataset.used === 'yes') return;
+  heart.dataset.used = 'yes';
+
+  const rect = heart.getBoundingClientRect();
+  const centerX = rect.left + rect.width / 2;
+  const centerY = rect.top + rect.height / 2;
+
+  for (let i = 0; i < 34; i++) {
+    const mini = document.createElement('span');
+    mini.className = 'burst-heart';
+    mini.textContent = ['❤️', '💗', '💕', '💖', '💘'][i % 5];
+
+    mini.style.left = centerX + 'px';
+    mini.style.top = centerY + 'px';
+
+    const angle = Math.random() * Math.PI * 2;
+    const distance = 80 + Math.random() * 190;
+
+    mini.style.setProperty('--x', Math.cos(angle) * distance + 'px');
+    mini.style.setProperty('--y', Math.sin(angle) * distance + 'px');
+
+    document.body.appendChild(mini);
+
+    setTimeout(() => mini.remove(), 1400);
+  }
+
+  heart.style.visibility = 'hidden';
+
+  setTimeout(() => {
+    document.getElementById('heartCard').classList.add('hidden');
+    document.getElementById('finalCard').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, 1150);
+}
+</script>
+
+</body>
+  </html>
